@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .imagem-responsiva {
+     width: 100%;
+    height: auto;
+    max-width: 1200px; /* Opcional: limita o tamanho máximo em telas grandes */
+    display: block;   /* Remove espaçamentos extras abaixo da imagem */
+    }
+    </style>
+</head>
+<body>
+    <h1>Imagens Responsivas</h1>
+    <button><a href="index.html">Voltar</a></button> <br>
+    <p>Imagem Responsiva com HTML</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem_300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_600.jpg" type="image/jpg">
+        <img src="imagens/imagem_1200.jpg" alt="Imagem paisagem flexível">
+    </picture>
+    <p>Imagem responsiva com CSS</p>
+    <img src="imagens/imagem_1200.jpg" 
+    srcset="imagens/imagem_300.jpg 300w, imagens/imagem_600.jpg 600w, imagens/imagem_1200.jpg 1200w"
+    sizes="(max-width: 1250px) 100vw, 1200px"
+    alt="Paisagem beautiful place"
+    width="1200"
+    height="auto"
+    loading="lazy">
+
+    <h2>Imagem responsiva alternativa com CSS</h2>
+    <img src="imagens/imagem_1200.jpg" alt="Beaultiful place" class="imagem-responsiva">
+
+    
+
+
+
+    
+</body>
+</html>
