@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.cupom-gamer{
+    border: 4px dotted red;
+    padding: 20px 60px;
+    margin: 50px 25px auto;
+} 
+.jogo-mais-vendido{
+    border: 4px dashed;
+    padding: 50px 60px;
+    margin: 50px 25px auto;
+}
+
+.btn-segundario{
+    /* Permite aplicar o padding e largura com segurança */
+    display: inline-block;
+    /* cor do fundo */
+    background-color: transparent;
+    /* cor do texto do botão */
+    /* formato retangular espaçado para o clique */
+    padding: 12px 28px;
+    /* borda sutil de acabamento */
+    border: 2px dotted  #0ea5e9;
+    /* arredonda as bordas */
+    border-radius: 15px;
+    /* o negrito do texto */
+    font-weight: 700;
+    /* remove o sublinhado */
+    text-decoration: none;
+    /* transforma o ponteiro do mouse em mãozinha de clique  */
+    cursor: pointer;
+    /* suavizar a mudança de movimento */
+    transition: all 0.2s ease;
+
+}
+
+.btn-segundario:hover{
+     /* clareia o botão ao encostar o mouse  */
+    background-color: #6366f1;
+    /* faz o botão flutuar 3 pixels para cima */
+    transform: translateY(-3px);
+    border-style: solid;
+}
+
+.btn-segundario:active{
+    transform: translateY(1px);
+}
+
+.btn-neon{
+    /* Permite aplicar o padding e largura com segurança */
+    display: inline-block;
+    /* cor do fundo */
+    background-color: rgb(0, 174, 255);
+    /* cor do texto do botão */
+    color: white;
+    /* formato retangular espaçado para o clique */
+    padding: 12px 28px;
+    /* borda sutil de acabamento */
+    border: 2px solid  #0a5577;
+    /* arredonda as bordas */
+    border-radius: 15px;
+    /* o negrito do texto */
+    font-weight: 700;
+    /* remove o sublinhado */
+    text-decoration: none;
+    /* transforma o ponteiro do mouse em mãozinha de clique  */
+    cursor: pointer;
+    /* suavizar a mudança de movimento */
+    transition: all 0.2s ease;
+
+}
+.btn-neon:hover{
+    /* clareia o botão ao encostar o mouse  */
+    background-color: #6366f1;
+    /* faz o botão flutuar 3 pixels para cima */
+    transform: translateY(-3px);
+}
+.btn-neon:active{
+    transform: translateY(1px);
+}

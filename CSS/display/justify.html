@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .navbar-gamer{
+            /* ativa o flexbox para o elemento pai header */
+            display: flex;
+            /* coloca o primeiro filho <div> na esquerada e o outro filho <nav> a direita */
+            justify-content: space-between;
+            align-items: center;
+
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar-gamer">
+        <div class="logo">Dev.games</div>
+        <nav class="menu-links">
+            <a href="">Inico</a>
+            <a href="">Catalogo</a>
+            <a href="">Perfil</a>
+        </nav>
+    </header>
+</body>
+</html>
