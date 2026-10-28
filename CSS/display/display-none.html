@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoiler filme</title>
+    <style>
+        body{
+            background-color: rgb(78, 74, 74);
+            color: white;
+            font-family: arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        /* estilizando o botão de spoiler com (box model + houver) */
+
+        .botao-spoiler{
+            background-color: #ff3f34;
+            color: white;
+            border: none;
+            /* plastico-bolha interno para engordar o botão */
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+        .botao-spoiler:hover{
+            background-color: #ff5e57;
+            /* dá um leve zoom ao passar o mouse */
+            transform: scale(1.05);
+        }
+
+        .caixa-secreta{
+            max-width: 400px;
+            margin: 25px auto;
+            padding: 20px;
+            background-color: #2f3542;
+            border: 4px dotted #ffd32a;
+            border-radius: 10px;
+
+        }
+        .escondido{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2> 🎥 Final Secreto do Filme</h2>
+    <p> Tem certeza que deseja saber o que acontece no Final?
+    </p>
+
+    <button class="botao-spoiler" onclick="revelarSpoiler()"> Clicar para ver o Spoiler
+    </button>
+
+    <div id="meu-spoiler" class="caixa-secreta escondido">
+        <h3>Spoiler Revelado</h3>
+        <p>O vilão na verdade era o mestre do protagonista o tempo todo!</p>
+    </div>
+
+    <script>
+        function revelarSpoiler(){
+            // encontra o elemneto pelo ID
+            const caixa = document.getElementById('meu-spoiler')
+
+            // Se tem a class "escondido" oculta, se não tem desoculta
+            caixa.classList.toggle('escondido')
+        }
+    </script>
+    
+</body>
+</html>

@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>justify-content</title>
+    <title>justify</title>
     <style>
+        header{
+            background-color: bisque;
+        }
         .navbar-gamer{
             /* ativa o flexbox para o elemento pai header */
             display: flex;
             /* coloca o primeiro filho <div> na esquerada e o outro filho <nav> a direita */
             justify-content: space-between;
             align-items: center;
-
+            height: 50px;
+            padding: 0 24px;
+            background-color: #0f172a;
+            color: white;
         }
+        .menu-links{
+            /* transformando o container menu links em um container flex */
+            display: flex;
+            /* criar um espaço entre os links do container */
+            gap: 20px;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+    .jogo-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 30, 0);
+        height: 300px;
+        margin: 10px 0;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+    }
+
     </style>
 </head>
 <body>
@@ -24,5 +55,10 @@
             <a href="">Perfil</a>
         </nav>
     </header>
+
+<div class="jogo-principal">
+    <h3>Valorant</h3>
+    </div>
+
 </body>
 </html>

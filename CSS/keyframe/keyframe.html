@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Store</title>
+
+    <style>
+        /* Animação de levitação */
+        @keyframes flutuar {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .icone-bau {
+            width: 50px;
+            height: auto;
+            animation: flutuar 2.5s ease-in-out infinite;
+        }
+
+        /* Barra de navegação */
+        .navbar-gamer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 16px;
+            border-bottom: 2px solid;
+        }
+
+        .navbar-gamer nav {
+            display: flex;
+            gap: 16px;
+        }
+
+        /* Vitrine de jogos */
+        .vitrine-jogos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card-jogo {
+            padding: 20px;
+            text-align: center;
+            background-color: antiquewhite;
+            border-radius: 10px;
+        }
+
+        /* Responsividade para celulares e tablets */
+        @media (max-width: 768px) {
+            .vitrine-jogos {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar-gamer {
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar-gamer">
+        <h1>Gamer Store</h1>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Jogos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main class="vitrine-jogos">
+        <div class="card-jogo">
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/4883/4883370.png"
+                alt="Baú de oferta"
+                class="icone-bau"
+            >
+            <h3>Jogo 1</h3>
+        </div>
+
+        <div class="card-jogo">
+            <h3>Jogo 2</h3>
+        </div>
+
+        <div class="card-jogo">
+            <h3>Jogo 3</h3>
+        </div>
+    </main>
+</body>
+</html>
