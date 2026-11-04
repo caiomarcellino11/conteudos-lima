@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* aumentando a altura da página, em relação a viewport */
+        body{
+            height: 300vh;
+
+        }
+
+        .container{
+            margin-top: 20vh;
+            /* positions testado:
+            position: fixed
+            position: relative
+            position:static
+            position: absolute
+            position:sticly */
+            position: relative;
+            left: 200px;
+
+            top: 150px;
+            background-color: blueviolet;
+            width: 400px;
+            height: 400px;
+
+        }
+
+        .box{
+            top: 30px;
+            left: 30px;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <!-- div pai e div filho -->
+    <div class="container">
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/1201041782/pt/foto/alpaca.jpg?s=612x612&w=is&k=20&c=4W-gvvbv7Q1VtDHw3J8znOhjlUsGBXSLOO5TPrG0B7M=">
+        </div>
+    </div>
+</body>
+</html>
