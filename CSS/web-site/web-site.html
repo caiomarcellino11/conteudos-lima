@@ -49,7 +49,7 @@
           <section class="hero-banner">
             <!-- Código SVG simples de uma ORCA -->
              <div class="orca-icone">
-               <svg width="110" height="70" viewBox="0 0 120 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <svg class="icone-svg" width="110" height="70" viewBox="0 0 120 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- Nadadeira Dorsal -->
                     <path d="M52 26 C54 6, 66 2, 72 2 C68 14, 68 22, 72 28 Z" fill="#00d2ff"/>
                     <!-- Corpo da Orca -->
@@ -186,5 +186,20 @@
                 </div>
               </div>
 </div>
+
+
+
+<script>
+    function altermarExplicacoes(){
+        document.body.classList.toggle('esconder-explicacoes');
+        var btn = document.getElementById('btnToggle');
+        if (document.body.classList.contains('esconder-explicacoes')) {
+            btn.textContent = 'Mostrar / Esconder Explicações CSS (Oculto)';
+        } else{
+            btn.textContent = 'Mostrar / Esconder Explicações CSS (Visivel)'
+        }
+    }
+
+</script>
 </body>
 </html>
